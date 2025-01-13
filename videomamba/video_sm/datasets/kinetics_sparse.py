@@ -27,14 +27,14 @@ except ImportError:
 class VideoClsDataset_sparse(Dataset):
     """Load your own video classification dataset."""
 
-    def __init__(self, anno_path, prefix='', split=' ', mode='train', clip_len=8,
+    def __init__(self, anno_path, prefix='', split=',', mode='train', clip_len=8,
                  frame_sample_rate=2, crop_size=224, short_side_size=256,
                  new_height=256, new_width=340, keep_aspect_ratio=True,
                  num_segment=1, num_crop=1, test_num_segment=10, test_num_crop=3,
                  args=None):
         self.anno_path = anno_path
         self.prefix = prefix
-        self.split = split
+        self.split =','
         self.mode = mode
         self.clip_len = clip_len
         self.frame_sample_rate = frame_sample_rate

@@ -1,3 +1,4 @@
+scikit-image==0.24.0
 apex==0.1
 av==11.0.0
 decord==0.6.0
